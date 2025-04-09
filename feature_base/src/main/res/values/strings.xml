@@ -3,4 +3,9 @@
     <string name="data_not_found">Data not found</string>
     <string name="main_navigation_search_title">Search</string>
     <string name="default_search_query">Jackson</string>
+
+    <!--Dynamic module titles-->
+    <string name="feature_album">feature album</string>
+    <string name="feature_favourite">feature favourite</string>
+    <string name="feature_profile">feature profile</string>
 </resources>

@@ -19,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -36,6 +37,7 @@ import com.igorwojda.showcase.base.presentation.activity.BaseFragment
 import com.igorwojda.showcase.base.presentation.compose.composable.DataNotFoundAnim
 import com.igorwojda.showcase.base.presentation.compose.composable.PlaceholderImage
 import com.igorwojda.showcase.base.presentation.compose.composable.ProgressIndicator
+import com.igorwojda.showcase.base.presentation.compose.composable.SimilarCard
 import com.igorwojda.showcase.base.presentation.ext.hideKeyboard
 import com.igorwojda.showcase.base.presentation.ext.initSearchBehaviour
 import com.igorwojda.showcase.base.presentation.ext.showKeyboard
@@ -182,7 +184,9 @@ private fun PhotoGrid(albums: List<Album>, viewModel: AlbumListViewModel) {
                 modifier = Modifier
                     .padding(Dimen.spaceS)
                     .wrapContentSize(),
-                onClick = { viewModel.onAlbumClick(album) },
+                onClick = {
+                    viewModel.onAlbumClick(album)
+                          },
             ) {
                 PlaceholderImage(
                     url = album.getDefaultImageUrl(),

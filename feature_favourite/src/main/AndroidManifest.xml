@@ -4,7 +4,7 @@
     <dist:module
             dist:instant="false"
             dist:onDemand="false"
-            dist:title="@string/feature_favourite">
+            dist:title="Favoritos">
         <dist:fusing dist:include="false" />
     </dist:module>
 
